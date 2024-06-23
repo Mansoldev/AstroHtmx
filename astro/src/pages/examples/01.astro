@@ -1,0 +1,16 @@
+---
+import Example from "../../components/Example.astro";
+---
+
+<Example title="Ejemplo 1: Fetching de citas de gatos">
+    <div id="result"></div>
+
+    <button
+        class="border border-white text-white px-4 py-2 rounded"
+        hx-trigger="click"
+        hx-get="/partials/cat-fact"
+        hx-target="#result"
+    >
+        ¡Dame una curiosidad sobre gatos!
+    </button>
+</Example>
